@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta name="generator" content="Hugo 0.125.1">
+  <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trabalho de conclusão de curso - MAC0499</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Árvores binárias de busca e a Conjectura da Otimalidade Dinâmica</h1>
+  </header>
+  <main>
+    <p>Autor: Bruno Armond Braga</p>
+    <p>Orientadora: Cristina Gomes Fernandes</p>
+    <p>Universidade de São Paulo - Instituto de Matemática e Estatística</p>
+
+      <h2>Resumo</h2>
+      <p>Árvores Binárias de Busca (ABBs) são estruturas de dados que armazenam um conjunto de chaves de um universo estático, que possui uma ordem total, e dão suporte a buscas neste conjunto. Essas estruturas são fundamentais para o universo da computação.</p>
+      
+      <p>Padrões de acesso do mundo real muitas vezes possuem estruturas repetitivas, como por exemplo bancos de dados que recebem solicitações frequentes para um pequeno número de elementos de alto tráfego. Nesse estudo estaremos interessados em explorar as delimitações de custo dos algoritmos de busca em ABBs.</p>
+
+      <p>Apesar de existirem ABBs muito bem documentadas com tempo por busca logarítmico no número de chaves armazenadas, essas estruturas normalmente não conseguem alcançar uma eficiência superior a isso independentemente da entrada.</p>
+      
+      <p>ABBs online são ABBs que apenas possuem informações sobre os acessos passados. Ou seja, ao fazer a busca i, o algoritmo de busca não tem conhecimento das próximas buscas, nem mesmo do valor de quantas buscas.</p>
+      
+      <p>Seja OPT(X) o menor custo possível de algum algoritmo de busca em ABB que acessa todas as chaves da entrada X. Uma ABB online é dinamicamente ótima se, para todas as sequências X, seu algoritmo de busca tem custo O(OPT(X)). Considera-se que não estão ocorrendo inserções ou remoções no conjunto durante estes acessos.</p>
+      
+      <p>Todo esse estudo é feito para tentar responder à pergunta: Existe uma ABB online dinamicamente ótima?"</p>
+      
+      <p>Uma das tentativas de responder tal pergunta foi a árvore splay de Sleator e Tarjan. Árvores splay são ABBs que seguem a heurística ``move to front". Assim, após cada acesso, a árvore se reestrutura de uma maneira particular, trazendo o nó da chave que foi acessada para a raiz da árvore.</p>
+
+      <p>Há uma conjectura não resolvida que diz que as árvores splay são dinamicamente ótimas. Essa conjectura ficou conhecida como a Conjectura da Otimalidade Dinâmica.</p>
+      
+      <h2>Entregas</h2>
+
+    <button onclick="window.location.href='/posts/PropostaTCC.pdf';">Proposta</button>
+  </main>
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
